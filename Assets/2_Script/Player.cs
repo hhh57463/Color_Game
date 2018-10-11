@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public GameObject[] ColorGams = null;
+    public GameObject[] _ColorGams = null;
 
-    public SpriteRenderer BackgroundSr = null;
+    public SpriteRenderer _BackgroundSr = null;
 
     Rigidbody _PlayerRig = null;
 
@@ -59,49 +59,49 @@ public class Player : MonoBehaviour
         switch(_nColorType)
         {
             case 1:
-                BackgroundSr.color = new Color(0 / 255, 0 / 255, 255 / 255, 255 / 255);
-                for (int i = 0; i < ColorGams.Length; ++i)
+                _BackgroundSr.color = new Color(0 / 255, 0 / 255, 255 / 255, 255 / 255);
+                for (int i = 0; i < _ColorGams.Length; ++i)
                 {
-                    ColorGams[i].SetActive(true);
+                    _ColorGams[i].SetActive(true);
                     if (i.Equals(0))
                     {
-                        ColorGams[i].SetActive(false);
+                        _ColorGams[i].SetActive(false);
                     }
                 }
                 break;
 
             case 2:
-                BackgroundSr.color = new Color(255 / 255, 0 / 255, 0 / 255, 255 / 255);
-                for (int i = 0; i < ColorGams.Length; ++i)
+                _BackgroundSr.color = new Color(255 / 255, 0 / 255, 0 / 255, 255 / 255);
+                for (int i = 0; i < _ColorGams.Length; ++i)
                 {
-                    ColorGams[i].SetActive(true);
+                    _ColorGams[i].SetActive(true);
                     if (i.Equals(1))
                     {
-                        ColorGams[i].SetActive(false);
+                        _ColorGams[i].SetActive(false);
                     }
                 }
                 break;
 
             case 3:
-                BackgroundSr.color = new Color(0 / 255, 255 / 255, 0 / 255, 255 / 255);
-                for (int i = 0; i < ColorGams.Length; ++i)
+                _BackgroundSr.color = new Color(0 / 255, 255 / 255, 0 / 255, 255 / 255);
+                for (int i = 0; i < _ColorGams.Length; ++i)
                 {
-                    ColorGams[i].SetActive(true);
+                    _ColorGams[i].SetActive(true);
                     if (i.Equals(2))
                     {
-                        ColorGams[i].SetActive(false);
+                        _ColorGams[i].SetActive(false);
                     }
                 }
                 break;
 
             case 4:
-                BackgroundSr.color = new Color(255 / 255, 255 / 255, 0 / 255, 255 / 255);
-                for (int i = 0; i < ColorGams.Length; ++i)
+                _BackgroundSr.color = new Color(255 / 255, 255 / 255, 0 / 255, 255 / 255);
+                for (int i = 0; i < _ColorGams.Length; ++i)
                 {
-                    ColorGams[i].SetActive(true);
+                    _ColorGams[i].SetActive(true);
                     if (i.Equals(3))
                     {
-                        ColorGams[i].SetActive(false);
+                        _ColorGams[i].SetActive(false);
                     }
                 }
                 break;

@@ -943,12 +943,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fb425a2ddcfda847bc2eaf65a7a8081, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ColorGams:
+  _ColorGams:
   - {fileID: 278523605}
   - {fileID: 1606084474}
   - {fileID: 1180646810}
   - {fileID: 11833308}
-  BackgroundSr: {fileID: 781092487}
+  _BackgroundSr: {fileID: 781092487}
   _fPlayerSpeed: 0
   _fPlayerJumpPower: 0
   _fPlayerGravity: 0
